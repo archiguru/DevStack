@@ -4,7 +4,7 @@
   "exclude": ["src/**/__tests__/*"],
   "compilerOptions": {
     "lib": ["ES2022"],
-    "target": "es2022",
+    "target": "es2022",  // 可选，设置编译目标
     "module": "es2022",
     "moduleResolution": "Node",
     "composite": true,
@@ -15,6 +15,8 @@
     "types": ["naive-ui/volar", "@intlify/unplugin-vue-i18n/messages", "unplugin-icons/types/vue"],
     "esModuleInterop": true,
     "jsx": "preserve",
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "noEmit": false // 确保该属性设置为 false 以启用代码发射
   }
 }
+
