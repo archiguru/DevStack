@@ -2,17 +2,17 @@
 import {
   chineseSimplifiedWordList,
   chineseTraditionalWordList,
-  czechWordList,
+  // czechWordList,
   englishWordList,
   entropyToMnemonic,
-  frenchWordList,
+  // frenchWordList,
   generateEntropy,
-  italianWordList,
-  japaneseWordList,
-  koreanWordList,
+  // italianWordList,
+  // japaneseWordList,
+  // koreanWordList,
   mnemonicToEntropy,
-  portugueseWordList,
-  spanishWordList,
+  // portugueseWordList,
+  // spanishWordList,
 } from '@it-tools/bip39';
 import { Copy, Refresh } from '@vicons/tabler';
 
@@ -22,22 +22,22 @@ import { isNotThrowing } from '@/utils/boolean';
 import { withDefaultOnError } from '@/utils/defaults';
 
 const languages = {
+  '中文简体': chineseSimplifiedWordList,
+  '中文繁体': chineseTraditionalWordList,
   'English': englishWordList,
-  'Chinese simplified': chineseSimplifiedWordList,
-  'Chinese traditional': chineseTraditionalWordList,
-  'Czech': czechWordList,
-  'French': frenchWordList,
-  'Italian': italianWordList,
-  'Japanese': japaneseWordList,
-  'Korean': koreanWordList,
-  'Portuguese': portugueseWordList,
-  'Spanish': spanishWordList,
+  // 'Czech': czechWordList,
+  // 'French': frenchWordList,
+  // 'Italian': italianWordList,
+  // 'Japanese': japaneseWordList,
+  // 'Korean': koreanWordList,
+  // 'Portuguese': portugueseWordList,
+  // 'Spanish': spanishWordList,
 };
 
 const entropy = ref(generateEntropy());
 const passphraseInput = ref('');
 
-const language = ref<keyof typeof languages>('English');
+const language = ref<keyof typeof languages>('中文简体');
 const passphrase = computed({
   get() {
     return withDefaultOnError(() => entropyToMnemonic(entropy.value, languages[language.value]), passphraseInput.value);

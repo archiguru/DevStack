@@ -250,7 +250,7 @@ All notable changes to this project will be documented in this file. See [standa
 - **e2e**: execute e2e against built app (#511) (cf382b5)
 - **deps**: update github/codeql-action action to v2 (#513) (0152583)
 - **deps**: update node.js to v18 (#514) (38cb61d)
-- **deps**: switched from vite-plugin-md to vite-plugin-vue-markdown (#510) (354aed6)
+- **deps**: switched from vite-plugin-md to unplugin-vue-markdown (#510) (354aed6)
 - **deps**: update dependency workbox-window to v7 (#509) (6b8682f)
 - **deps**: update dependency vite-svg-loader to v4 (#508) (9e8349d)
 - **deps**: update dependency typescript to ~4.9.0 (#481) (f440507)

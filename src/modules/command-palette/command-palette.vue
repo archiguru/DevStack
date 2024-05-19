@@ -139,7 +139,7 @@ function activateOption(option: PaletteOption) {
 
 <style scoped lang="less">
 .c-input-text {
-  font-size: 18px;
+  font-size: 24px;
 
   ::v-deep(.input-wrapper) {
       padding: 4px;
@@ -149,6 +149,6 @@ function activateOption(option: PaletteOption) {
 
 .c-modal--overlay {
   align-items: flex-start !important;
-  padding-top: 80px;
+  padding-top: 120px;
 }
 </style>

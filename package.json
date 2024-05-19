@@ -13,13 +13,19 @@
     "developer-tools",
     "developer-productivity"
   ],
-  "author": "Corentin Th <corentin.thomasset74+it-tools@gmail.com> (https://github.com/CorentinTh)",
+  "author": "Corentin Th <corentin.thomasset74+it-tools@gmail.com> (https://github.com/archiguru)",
   "license": "GNU GPLv3",
   "repository": {
     "type": "git",
-    "url": "https://github.com/CorentinTh/it-tools"
+    "url": "https://github.com/archiguru/it-tools-zh_CN"
   },
   "type": "module",
+  "compilerOptions": {
+    "noEmit": true,
+    "skipLibCheck": true,
+    "noImplicitAny": false,
+    "strict": false
+  },
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && NODE_OPTIONS=--max_old_space_size=4096 vite build",
@@ -81,11 +87,13 @@
     "pinia": "^2.1.7",
     "plausible-tracker": "^0.3.8",
     "qrcode": "^1.5.3",
+    "rollup-plugin-visualizer": "^5.12.0",
     "sql-formatter": "^15.3.1",
     "ua-parser-js": "^1.0.37",
     "ulid": "^2.3.0",
     "unicode-emoji-json": "^0.6.0",
     "unplugin-auto-import": "^0.17.6",
+    "unplugin-vue-markdown": "^0.26.2",
     "uuid": "^9.0.1",
     "vue": "^3.4.27",
     "vue-i18n": "^9.13.1",
@@ -133,7 +141,6 @@
     "unplugin-vue-components": "^0.27.0",
     "vite": "^4.5.3",
     "vite-plugin-pwa": "^0.20.0",
-    "vite-plugin-vue-markdown": "^0.23.8",
     "vite-svg-loader": "^4.0.0",
     "vitest": "^0.34.6",
     "workbox-window": "^7.1.0",

@@ -1,4 +1,4 @@
 /* TEAM */
-Developer: Corentin Thomasset
-Site: https://github.com/CorentinTh
-Twitter: @cthmsst
+Developer: ArchiGuru
+Site: https://github.com/archiguru
+Twitter: @archiguru_io

@@ -221,7 +221,6 @@ function onSearchInput() {
   .c-select-dropdown {
     background-color: v-bind('theme.backgroundColor');
     border-radius: 4px;
-    // box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     box-shadow: v-bind('theme.dropdownShadow');
     font-family: inherit;
     font-size: inherit;
